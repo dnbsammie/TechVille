@@ -1,7 +1,4 @@
 {
-    // Use IntelliSense para saber los atributos posibles.
-    // Mantenga el puntero para ver las descripciones de los existentes atributos.
-    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
         {
@@ -9,7 +6,7 @@
             "request": "launch",
             "name": "Launch JavaFX App",
             "mainClass": "UI.Main", 
-            "vmArgs": "--module-path \"C:/Program Files/Eclipse Adoptium/jdk-21.0.5.11-hotspot/lib\" --add-modules javafx.controls,javafx.fxml"
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
