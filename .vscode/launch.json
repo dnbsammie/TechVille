@@ -4,13 +4,12 @@
     // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
         {
             "type": "java",
-            "name": "Launch App",
             "request": "launch",
-            "mainClass": "UI.Main",
-            "vmArgs": "--module-path C:/Program Files/Java/javafx-sdk-23.0.2/lib --add-modules javafx.controls,javafx.fxml"
+            "name": "Launch JavaFX App",
+            "mainClass": "UI.Main", 
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-23.0.2/lib\" --add-modules javafx.controls,javafx.fxml"
         },
         {
             "type": "java",
