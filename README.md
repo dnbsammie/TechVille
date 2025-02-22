@@ -123,6 +123,7 @@ public class Cart {
 }
 </code>
 </pre>
+<p>En esta aprte tomamos todos los productos comprados por parte del cliente haciendo una suma total en un arraylist para sacar su subtotal sin aun aplicar el descuento y en calcular toda se ofrece el descuento</p>
 <pre>
 <code>
 package User;
@@ -141,6 +142,7 @@ public class User {
 <p align="center">
   <img src="example-screenshot.png" alt="Example Screenshot" width="600">
 </p>
+<a href="#">Colocar link de video xd</a>
 
 
 <!-- Credits -->
