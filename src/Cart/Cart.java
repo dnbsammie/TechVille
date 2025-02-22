@@ -23,7 +23,7 @@ public class Cart {
     return productList;
   }
 
-  public double calculateSubTotal() {
+  public double calculateTotal() {
     double total = 0;
     int totalQuantity = 0;
 
