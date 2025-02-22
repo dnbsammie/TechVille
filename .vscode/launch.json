@@ -1,0 +1,23 @@
+{
+    // Use IntelliSense para saber los atributos posibles.
+    // Mantenga el puntero para ver las descripciones de los existentes atributos.
+    // Para más información, visite: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "UI.Main",
+            "vmArgs": "--module-path C:/Program Files/Java/javafx-sdk-23.0.2/lib --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "UI.Main",
+            "projectName": "TechVille_e0bcc106"
+        }
+    ]
+}
