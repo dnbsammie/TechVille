@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import Product.Product;
 import Product.Discount;
 
+
 public class Cart {
 
   private ArrayList<Product> productList = new ArrayList<>();
@@ -13,6 +14,17 @@ public class Cart {
       if (p.getName().equals(product.getName())) {
         p.setQuantity(p.getQuantity() + product.getQuantity());
         return;
+      }
+
+      if (p.getPrice() <= 0) {
+        showAlert("El precio no puede ser negativo" + p.getPrice());
+        return;
+      }
+
+      if (p.getQuantity() <= 0) {
+        showAlert("La cantidad no puede ser negativa" + p.getQuantity());
+        return;
+        
       }
     }
 
@@ -34,4 +46,5 @@ public class Cart {
 
     return Discount.aplicarDiscount(total, totalQuantity);
   }
+
 }
