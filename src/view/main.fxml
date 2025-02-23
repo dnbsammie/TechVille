@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.Controller"
+            stylesheets="@styles.css">
+
+    <!-- HEADER -->
+    <top>
+        <HBox spacing="10" id="header">
+            <Label text="FreeMarket" id="title"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button text="Inicio" onAction="#goHome" id="navButton"/>
+            <Button text="Carrito" onAction="#viewCart" id="navButton"/>
+            <Button text="Historial" onAction="#viewHistory" id="navButton"/>
+            <Button text="Perfil" onAction="#viewProfile" id="navButton"/>
+        </HBox>
+    </top>
+
+    <!-- SIDEBAR - FILTROS -->
+    <left>
+        <VBox spacing="10" id="sidebar">
+            <Label text="Filtrar por categoría:"/>
+            <ComboBox fx:id="categoryFilter"/>
+            <Button text="Alfabéticamente" onAction="#sortByName"/>
+            <Button text="Precio" onAction="#sortByPrice"/>
+        </VBox>
+    </left>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <center>
+        <TabPane fx:id="tabPane">
+            <!-- Pestaña de Tienda -->
+            <Tab text="Tienda">
+                <GridPane fx:id="productGrid" hgap="10" vgap="10" alignment="CENTER"/>
+            </Tab>
+
+            <!-- Pestaña del Carrito -->
+            <Tab text="Carrito">
+                <VBox spacing="10" alignment="CENTER">
+                    <Label text="Carrito de Compras"/>
+                    <ListView fx:id="cartList" prefHeight="200"/>
+                    <Label fx:id="totalLabel" text="Total: $0.00"/>
+                    <Button text="Finalizar Compra" onAction="#checkout"/>
+                    <Label fx:id="userNameLabel" text="Usuario: "/>
+                    <Label fx:id="userEmailLabel" text="Correo: "/>
+                </VBox>
+            </Tab>
+
+            <!-- Pestaña del Historial -->
+            <Tab text="Historial">
+                <VBox spacing="10" alignment="CENTER">
+                    <Label text="Historial de Compras"/>
+                    <ListView fx:id="historyList" prefHeight="200"/>
+                    <Label fx:id="userNameLabel" text="Usuario: "/>
+                    <Label fx:id="userEmailLabel" text="Correo: "/>
+                </VBox>
+            </Tab>
+            
+            <!-- Pestaña de Perfil -->
+            <Tab text="Perfil">
+                <VBox spacing="10" alignment="CENTER">
+                    <Label text="Perfil de Usuario"/>
+                    <TextField fx:id="nameField" promptText="Nombre"/>
+                    <TextField fx:id="emailField" promptText="Correo"/>
+                    <PasswordField fx:id="passwordField" promptText="Nueva Contraseña"/>
+                    <Button text="Guardar" onAction="#saveProfile"/>
+                    <Label fx:id="profileNameLabel" text="Nombre: "/>
+                    <Label fx:id="profileEmailLabel" text="Correo: "/>
+                </VBox>
+            </Tab>
+        </TabPane>
+    </center>
+
+    <!-- FOOTER -->
+    <bottom>
+        <HBox alignment="CENTER" id="footer">
+            <Label text="© 2025 FreeMarket - Todos los derechos reservados"/>
+        </HBox>
+    </bottom>
+</BorderPane>

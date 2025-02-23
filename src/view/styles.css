@@ -1,0 +1,105 @@
+#header {
+    -fx-background-color: #684df4;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-alignment: center-left;
+}
+
+#title {
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+#navButton {
+    -fx-background-color: #684df4;
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 15px;
+    -fx-border-radius: 5px;
+}
+
+#navButton:hover {
+    -fx-background-color: #5038c9;
+}
+
+#sidebar {
+    -fx-background-color: #050505;
+    -fx-padding: 10px;
+    -fx-spacing: 8px;
+}
+
+#sidebar Label {
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+#sidebar Button {
+    -fx-background-color: #050505;
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+    -fx-alignment: center-left;
+    -fx-pref-width: 150px;
+}
+
+#sidebar Button:hover {
+    -fx-background-color: #684df4;
+}
+
+#tabPane {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+    -fx-alignment: center;
+}
+
+.button {
+    -fx-background-color: #684df4;
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 14px;
+    -fx-padding: 8px 15px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+}
+
+.button:hover {
+    -fx-background-color: #5038c9;
+}
+
+#footer {
+    -fx-background-color: #050505;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+}
+
+#footer Label {
+    -fx-text-fill: #f5f5f5;
+    -fx-font-size: 12px;
+}
+
+.dialog-pane {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #684df4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.dialog-pane .label {
+    -fx-text-fill: #050505;
+    -fx-font-size: 14px;
+}
+
+.dialog-pane .button-bar .button {
+    -fx-background-color: #684df4;
+    -fx-text-fill: #f5f5f5;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px 10px;
+}
+
+.dialog-pane .button-bar .button:hover {
+    -fx-background-color: #5038c9;
+}
