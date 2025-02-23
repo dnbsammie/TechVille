@@ -149,7 +149,7 @@ public class User {
 <h2 id="credits">Creditos</h2>
 <p>
   <strong>Participante 1:</strong> Alejandro Ramirez<br>
-  <strong>GitHub:</strong> <a href="#"></a>
+  <strong>GitHub: https://github.com/Alejo12680</strong> <a href="https://github.com/Alejo12680"></a>
   <br>
   <strong>Participante 3:</strong> Jhonatan Benavides<br>
   <strong>GitHub:</strong> <a href="#"></a>
