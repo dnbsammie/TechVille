@@ -16,6 +16,7 @@
     <li><a href="#about">Acerca del reto</a></li>
     <li><a href="#gallery">Galeria</a></li>
     <li><a href="#code">Estructura de código</a></li>
+    <li><a href="#usage">Usage</a></li>
     <li><a href="#credits">Integrantes</a></li>
   </ol>
 </details>
@@ -440,6 +441,45 @@ public enum Category {
 </code>
 </pre>
 
+<!-- Uso -->
+<h2 id="usage">Installación</h2>
+<p>Explain how to use the project, provide examples, or show screenshots.</p>
+<pre>
+<code>
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Launch JavaFX App",
+            "mainClass": "Main", 
+            "vmArgs": "--module-path \"La ubicación de tu SDK" --add-modules javafx.controls,javafx.fxml"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "TechVille_e0bcc106"
+        }
+    ]
+}
+</code>
+</pre>
+
+<pre>
+<code>
+{
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.referencedLibraries": [
+        // Dentro de la carpeta lib, se encuentra cada uno de los elementos de JavaFX que se necesitan
+    ]
+}
+</code>
+</pre>
 
 <!-- Credits -->
 
