@@ -63,7 +63,7 @@ public class Controller {
     }
 
     private void initializeProductGrid() {
-        loadProducts(store.getProducts()); // Carga todos los productos
+        loadProducts(store.getProducts());
         categoryFilter.getItems().addAll(Category.values());
         categoryFilter.setOnAction(e -> filterProducts());
     }
@@ -76,7 +76,7 @@ public class Controller {
             productGrid.add(productBox, col, row);
 
             col++;
-            if (col > 2) { // 3 columnas por fila
+            if (col > 2) {
                 col = 0;
                 row++;
             }
@@ -131,6 +131,12 @@ public class Controller {
                 .filter(p -> selectedCategory == null || p.getCategory() == selectedCategory)
                 .toList();
         loadProducts(filteredList);
+    }
+
+    @FXML
+    private void clearFilters() {
+        categoryFilter.setValue(null);
+        loadProducts(store.getProducts());
     }
 
     @FXML

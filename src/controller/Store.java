@@ -41,11 +41,12 @@ public class Store {
         products.add(createProduct(Category.VIDEO, "GoPro Hero 11", 500, 10, "/resources/video.png"));
         products.add(createProduct(Category.VIDEO, "Dron DJI Mavic Air 2", 1200, 5, "/resources/video.png"));
     }
-    private Product createProduct(Category category, String name, double price, int quantity, String imagePath) {
-        String fullPath = getClass().getResource(imagePath) != null ? getClass().getResource(imagePath).toString() : "";
-        return new Product(category, name, price, quantity, fullPath);
-    }
 
+    private Product createProduct(Category category, String name, double price, int stockQuantity, String imagePath) {
+        String fullPath = getClass().getResource(imagePath) != null ? getClass().getResource(imagePath).toString() : "";
+        return new Product(category, name, price, stockQuantity, fullPath);
+    }
+    
     public List<Product> getProducts() {
         return products;
     }

@@ -2,10 +2,10 @@ package model;
 
 public enum Category {
     AUDIO,
-    VIDEO,
-    GAMING,
-    TELEVISION,
     COMPUTERS,
+    GAMING,
+    SMARTPHONES,
     TABLETS,
-    SMARTPHONES;
+    TELEVISION,
+    VIDEO;
 }

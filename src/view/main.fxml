@@ -27,6 +27,7 @@
             <ComboBox fx:id="categoryFilter"/>
             <Button text="Alfabéticamente" onAction="#sortByName"/>
             <Button text="Precio" onAction="#sortByPrice"/>
+            <Button text="Limpiar Filtros" onAction="#clearFilters"/>
         </VBox>
     </left>
 
@@ -57,6 +58,7 @@
                     <ListView fx:id="historyList" prefHeight="200"/>
                     <Label fx:id="userNameLabel" text="Usuario: "/>
                     <Label fx:id="userEmailLabel" text="Correo: "/>
+
                 </VBox>
             </Tab>
             
